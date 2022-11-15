@@ -1,0 +1,94 @@
+.centerContent {
+    display: flex;
+    justify-content: center;
+}
+
+.centerContent2 {
+   
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonMenuEscondibleActive {
+    font-size: xx-large;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    left: 0%;
+}
+.botonMenuEscondibleDesactive{
+    font-size: xx-large;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    left: -50%;
+}
+
+.barraLateralMenuHide {
+
+    display: flex;
+    left: -50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: bisque;
+    width: 30%;
+    height: 100vh;
+    transition: .8s;
+
+}
+
+.barraLateralMenuVisible {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    left:  0%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: bisque;
+    width: 50%;
+    height: 100vh;
+    transition: .8s;
+    z-index: 10;
+    flex-direction: column;
+}
+
+
+
+.botonCerrar {
+   
+    display: flex;
+    align-items: center;
+    width: 100%;
+;
+    justify-content: flex-end;
+    transition: .8s;
+}
+
+.boton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .centerContent2 {
+        width: 100%;
+    }
+
+}

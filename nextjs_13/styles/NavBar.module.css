@@ -1,0 +1,67 @@
+.header{
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-top: 30px;
+    
+}
+.navbar{
+    display: flex;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    width: 100px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center; 
+}
+.boton:hover::after{
+    width: 50px;
+    color: black;
+    content: "este es un contenido";
+}
+
+
+.menu:hover{
+    color: chocolate;
+    font-size: 2em;
+    transition: .5s;
+}
+
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  .menu:hover .tooltiptext {
+    visibility: visible;
+  }
+@media only screen and (max-width: 1000px) {
+    .navbar{
+        
+        font-size: 30px;
+    }
+    .header{
+        position: absolute;
+        background-color: aqua;
+        left: -100%;
+    }
+  }
